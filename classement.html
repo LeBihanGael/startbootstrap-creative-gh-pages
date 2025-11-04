@@ -15,10 +15,10 @@
     <style>
         :root {
             --primary-color: #e10600;
-            --secondary-color: #23272f;
+            --secondary-color: #ffffff;
             --text-light: #ffffff;
-            --text-dark: #333333;
-            --accent-color: #1f1f1f;
+            --text-dark: #ffffff;
+            --accent-color: #000000;
             --grid-bg: rgb(0, 0, 0);
         }
 
@@ -30,14 +30,12 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            background: linear-gradient(135deg, #300200 0%, #4d0707 100%);
-            color: var(--text-light);
             line-height: 1.6;
+            background-color: #00000049;
         }
 
         .hero {
-            background: linear-gradient(rgba(95, 0, 0, 0.7), rgba(0, 0, 0, 0.753)),
-                        url('assets/img/pod.jpg') center/cover fixed;
+            background-color: rgba(255, 255, 255, 0.2);
             height: 40vh;
             display: flex;
             align-items: center;
@@ -49,7 +47,7 @@
         .hero h1 {
             font-size: 3rem;
             margin-bottom: 1rem;
-            color: var(--primary-color);
+            color: white;
             text-transform: uppercase;
         }
 
@@ -76,18 +74,22 @@
         }
 
         .standings-nav button.active {
-            background: var(--primary-color);
+            background: rgba(255, 255, 255, 0.2);
         }
 
         .standings-grid {
-            background: var(--grid-bg);
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            box-shadow: 3px 9px 11px 0px rgba(255, 255, 255, 0.686) inset,
+                -11px -7px 12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.5);
         }
 
         .standings-header {
-            background: var(--accent-color);
+            background-color: rgba(255, 255, 255, 0.2);
             padding: 15px;
             display: grid;
             grid-template-columns: 70px 50px 2fr 1fr 1fr;
@@ -103,15 +105,16 @@
             align-items: center;
             border-bottom: 1px solid rgba(255,255,255,0.1);
             transition: background-color 0.3s;
+            color: #000000;
         }
 
         .standings-row:hover {
-            background: rgba(225, 6, 0, 0.1);
+            background: rgba(94, 91, 91, 0.822);
         }
 
         .position {
             font-weight: bold;
-            color: var(--primary-color);
+            color: rgb(0, 0, 0);
         }
 
         .driver-info {
@@ -412,70 +415,90 @@
             <div class="standings-row">
                 <div class="position">1</div>
                 <div></div>
-                <div class="driver-info">McLaren</div>
+                <div class="driver-info">
+                    <img src="assets/img/drapeau/ru.jpg" alt="Drapeau Royaume-Uni">
+                    <span>McLaren</span></div>
                 <div>Royaume-Uni</div>
                 <div class="points">713</div>
             </div>
             <div class="standings-row">
                 <div class="position">2</div>
                 <div></div>
-                <div class="driver-info">Ferrari</div>
+                <div class="driver-info">
+                    <img src="assets/img/drapeau/ita.jpg" alt="Drapeau Italie">
+                    <span>Ferrari</span></div>
                 <div>Italie</div>
                 <div class="points">356</div>
             </div>
             <div class="standings-row">
                 <div class="position">3</div>
                 <div></div>
-                <div class="driver-info">Mercedes</div>
+                <div class="driver-info">
+                    <img src="assets/img/drapeau/all.jpg" alt="Drapeau Allemagne">
+                    <span>Mercedes</span></div>
                 <div>Allemagne</div>
                 <div class="points">355</div>
             </div>
             <div class="standings-row">
                 <div class="position">4</div>
                 <div></div>
-                <div class="driver-info">Red Bull Racing</div>
+                <div class="driver-info">
+                    <img src="assets/img/drapeau/aut.jpg" alt="Drapeau Autriche">
+                    <span>Red Bull Racing</span></div>
                 <div>Autriche</div>
                 <div class="points">346</div>
             </div>
             <div class="standings-row">
                 <div class="position">5</div>
                 <div></div>
-                <div class="driver-info">Williams</div>
+                <div class="driver-info">
+                    <img src="assets/img/drapeau/ru.jpg" alt="Drapeau Royaume-Uni">
+                    <span>Williams</span></div>
                 <div>Royaume-Uni</div>
                 <div class="points">111</div>
             </div>
             <div class="standings-row">
                 <div class="position">6</div>
                 <div></div>
-                <div class="driver-info">Racing Bulls</div>
+                <div class="driver-info">
+                    <img src="assets/img/drapeau/ita.jpg" alt="Drapeau Italie">
+                    <span>Racing Bulls</span></div>
                 <div>Italie</div>
                 <div class="points">72</div>
             </div>
             <div class="standings-row">
                 <div class="position">7</div>
                 <div></div>
-                <div class="driver-info">Aston Martin</div>
+                <div class="driver-info">
+                    <img src="assets/img/drapeau/ru.jpg" alt="Drapeau Royaume-Uni">
+                    <span>Aston Martin</span></div>
                 <div>Royaume-Uni</div>
                 <div class="points">69</div>
             </div>
             <div class="standings-row">
                 <div class="position">8</div>
                 <div></div>
-                <div class="driver-info">Haas</div>
+                <div class="driver-info">
+                    <img src="assets/img/drapeau/usa.jpg" alt="Drapeau Etats-Unis">
+                    <span>Haas</span></div>
                 <div>Etats-Unis</div>
                 <div class="points">62</div>
             </div>
             <div class="standings-row">
                 <div class="position">9</div>
                 <div></div>
-                <div class="driver-info">Sauber</div>
+                <div class="driver-info">
+                    <img src="assets/img/drapeau/suisse.jpg" alt="Drapeau Suisse">
+                    <span>Sauber</span></div>
                 <div>Suisse</div>
                 <div class="points">60</div>
             </div>
             <div class="standings-row">
                 <div class="position">10</div>
                 <div></div>
-                <div class="driver-info">Alpine</div>
+                <div class="driver-info">
+                    <img src="assets/img/drapeau/fr.jpg" alt="Drapeau France">
+                    <span>Alpine</span></div>
                 <div>France</div>
                 <div class="points">20</div>
             </div>
