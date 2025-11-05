@@ -56,8 +56,6 @@ window.addEventListener('DOMContentLoaded', event => {
         elements: '#portfolio a.portfolio-box'
     });
 
-});
-
 
 function showStandings(type) {
     const driversStandings = document.getElementById('drivers-standings');
@@ -96,4 +94,3 @@ document.querySelectorAll('.standings-row').forEach(row => {
     row.style.transition = 'all 0.3s ease-out';
     observer.observe(row);
 });
-
